@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1. Table element is used to create the table  -->
+    <!-- 2. inside table element there is table row -->
+    <!-- 3. inside table row tr there is table description and also table head can also be present -->
+    <!-- 4. we can simply less or make increase in the size of td or tr using colspan or rowspan  -->
+    <!-- 5. colspan contain the space of column its up to us , what we are gaving the size i.e 2 colspan contain one column spaces -->
+    <!-- 6. same condition is for rowspan , but the size we gave to row is in row -->
+
+
+    <h1>1. Table , table row , table head , table description</h1>
+    <table border="1px solid black">
+        <!-- table row 1 -->
+        <tr>
+            <th>Subject</th>
+            <th>8am</th>
+            <th>9am</th>
+            <th>10am</th>
+            <th>11am</th>
+            <th>12am</th>
+        </tr>
+        <!-- table row 2 -->
+        <tr>
+            <th>Monday</th>
+            <td>Math</td>
+            <td>Chemistry</td>
+            <td>Physics</td>
+            <td>Biology</td>
+            <td>History</td>
+        </tr>
+        <!-- table row 3 -->
+        <tr>
+            <th>Tuesday</th>
+            <td>Chemistry</td>
+            <td>Physics</td>
+            <td>Biology</td>
+            <td>History</td>
+            <td>Math</td>
+        </tr>
+        <!-- table row 4 -->
+        <tr>
+            <th>Wednesday</th>
+            <td>Physics</td>
+            <td>Math</td>
+            <td>Chemistry</td>
+            <td>History</td>
+            <td>Biology</td>
+        </tr>
+        <!-- table row 5 -->
+        <tr>
+            <th>Thursday</th>
+            <td>History</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>Math </td>
+            <td>Biology</td>
+        </tr>
+        <!-- table row 6 -->
+        <tr>
+            <th>Friday</th>
+            <td>Math </td>
+            <td>Chemistry</td>
+            <td>Physics</td>
+            <td>Biology</td>
+            <td>History</td>
+        </tr>
+        <!-- table row 7 -->
+        <tr>
+            <th>Wednesday</th>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>Math </td>
+            <td>History</td>
+            <td>Biology</td>
+        </tr>
+    </table>
+
+    <!-- colspan and rowspan -->
+
+    <h2>2. Concept of colspan and rowspan</h2>
+    <table border="1px solid black">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">5</td>
+            <td colspan="2">6</td>
+            <!-- <td></td> -->
+            <td>8</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td colspan="2">10</td>
+            <!-- <td></td> -->
+            <td>12</td>
+        </tr>
+    </table>
+
+    <h2>3. Table head , table body , table foot for long table</h2>
+    <table border="1px solid black">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Income</th>
+                <th>Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1st January</th>
+                <td>250</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <th>2nd January</th>
+                <td>285</td>
+                <td>48</td>
+            </tr>
+            <!-- additional rows as above -->
+            <tr>
+                <th>31st January</th>
+                <td>129</td>
+                <td>64</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Addtion</th>
+                <td>7824</td>
+                <td>1241</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

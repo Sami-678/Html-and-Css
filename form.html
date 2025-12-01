@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Form is an important topic in html , as we can easily see the googl form or many login form in todays world-->
+    <form>
+        <!-- input is self closing tag  , and its main goal is to take input-->
+        <!-- 1. its type is simple text and name tells the browser whattype of data is to be store-->
+               <!-- we can make this box neccesary to fill using required -->
+        <p>1. Username : <input type="text" name="UserName" required/></p>
+        <!-- 2. its type is password  -->
+        <p>2. Password : <input type="password" required></p>
+        <!-- 3. its type is textarea  , we tell the browser to add comments-->
+        <p>3. Enter your reviews:<textarea name="comments"></textarea></p>
+        <!-- 4. radio  , by entering radio type we can select one option at one time-->
+        <!-- where , name tells the browser what type of input is  -->
+        <p>
+            4. Enter your gender:
+        <p><input type="radio" name="gender" value="Male"> Male</p>
+        <p><input type="radio" name="gender" value="female"> Female</p>
+        <p><input type="radio" name="gender" value="others"> Others</p>
+        </p>
+        <!-- 5. type is check box  , in this type we can tag multiple types of values at once -->
+        <p>
+            5. Enter your skills :
+        <p><input type="checkbox" name="skills" value="web-dev">Web developer</p>
+        <p><input type="checkbox" name="skills" value="designer">UI Designer</p>
+        <p><input type="checkbox" name="skills" value="ai-enginner">AI Enginner</p>
+        <p><input type="checkbox" name="skills" value="devops">DevOps</p>
+        </p>
+        <!-- 6. drop downlist  , we can also perform multiple inputs to this , 
+           for this we have to press ctrl and then click , then we can select multiple click-->
+        <p>
+            6. Enter your favourite language :
+            <select name="devices" multiple="multiple">
+                <option value="java">Java</option>
+                <option value="javascript">Javascript</option>
+                <option value="python">Python</option>
+                <option value="c++">C++</option>
+            </select>
+        </p>
+
+        <!-- 7. input type file  , we can upload the file from our pc using this input type-->
+        <p>
+            7. Enter your File :
+        <p><input type="file" name="user-upload"></p>
+        </p>
+
+<!-- 8. You can group related form controls together inside the fieldset element. This is
+          particularly helpful for longer forms. -->
+        <fieldset>
+            <legend>Contact details</legend>
+            <label>Email:<br />
+                <input type="text" name="email"/></label><br />
+            <label>Mobile:<br />
+                <input type="text" name="mobile" required/></label><br />
+            <label>Telephone:<br />
+                <input type="text" name="telephone" required /></label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Submit form">
+        </p>
+
+    </form>
+</body>
+
+</html>
