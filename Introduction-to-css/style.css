@@ -1,0 +1,38 @@
+
+/* Universal selector */
+*{
+    /* padding: 0;
+    margin: 0; */
+    background: rgb(245, 243, 240);
+    font-family: sans-serif;
+}
+/* type selector */
+h1{
+    text-align: center;
+    color: rgb(165, 165, 255);
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* class selector */
+
+.paragraph{
+    text-align: center;
+    color: rgb(255, 169, 169);
+}
+
+/* id selector */
+
+#div{
+ background: rgb(216, 180, 250);
+ text-align: center;
+ color: rgb(146, 146, 251);
+}
+
+/* child selector */
+ul li{
+    list-style: none;
+    background: rgb(219, 253, 169);
+}
