@@ -1,0 +1,57 @@
+/* we can gave colors using  */
+
+/* hex code */
+/*These are six-digit codes that represent the amount of red,
+green and blue in a color, preceded by a pound or hash */
+
+h1{
+    background: #fee192;
+}
+
+/* rgb values */
+/* These express colors in terms of how much red, green and blue are used to make it up. */
+
+.div{
+    background: rgba(104, 223, 13 , 0.2);
+}
+p{
+    background-color: rgb(142, 142, 249);
+}
+
+/* rgba value */
+/* where : 
+r for red 
+g stands for green 
+b stands for blue
+a stands for alpha
+where a handle the transperency of that color */
+
+
+.Container{
+    border: 2px solid black;
+    height: 300px;
+    width: 70%;
+    display: flex;
+    
+}
+.Container div{
+    border: 1px solid black;
+    width: 25%;
+    height: 50%;
+    /* border-spacing: 10px; */
+}
+
+/* direct color */
+
+#b1{
+    background-color: aqua;
+}
+#b2{
+    background-color:beige;
+}
+#b3{
+    background-color: bisque;
+}
+#b4{
+    background-color: brown;
+}
