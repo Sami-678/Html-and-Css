@@ -1,0 +1,71 @@
+h1{
+    /* by default first execute courier New 
+    if this font is not avalible , then courier font runs ,
+     if it is also not avalible then monospace run   */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* we can also make a font of our own name using font face */
+@font-face{
+  font-family: font-face-font ;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+}
+p{
+    /* font-size: bold; */
+    font-family: font-face-font , sans-serif;
+    /* we can also apply font style */
+    font-style: italic;
+    /* we can also transform text into upper or lower case  */
+    /*1. lower case */
+    /* text-transform: lowercase; */
+    /*2. upper case */
+    /* text-transform: uppercase; */
+    /* we can also transform our text in capatalize i.e it make the first letter of every word  */
+    /* 3. capitalize */
+    /* text-transform: capitalize; */
+}
+/* as we wanted to make the first letter of the whole para capital */
+p::first-letter{
+    text-transform: capitalize;
+}
+/* using text-decoration we can easily remove the default line in anchor tag */
+a{
+text-decoration: none;
+background-color: rgb(130, 253, 255);
+border: 1px solid blue;
+display: inline-block;
+height: 35px;
+width: 100px;
+border-radius: 20px;
+/* here we can apply text align property as , it main motive is to  make the text in centre*/
+text-align: center;
+align-items: center;
+justify-content: center;
+padding-top:10px;
+
+}
+a:hover{
+    background-color: aquamarine;
+    color: rgb(62, 114, 237);
+    border: 1px solid brown;
+}
+a:link{
+    color: blue;
+}
+a:visited{
+    color: cadetblue;
+}
+h2{
+    /* text shadow */
+    /* where first is of left to right second is of top to bottom  , third is the amount of blur */
+    text-shadow: 10px 6px 5px rgb(148, 148, 151); 
+
+}
+/* we can also make lineheigt , word spacing , letter spacing */
+.para{
+    /* em is a unit , where 1em is the size of m (as it is the heaviest word in alphabet) , i.e 16px or 12px */
+    line-height: 1.5em;
+    /* we can also make space in letter as well as words */
+    letter-spacing: 0.2em;
+   word-spacing: 1em;
+}

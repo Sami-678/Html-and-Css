@@ -1,0 +1,32 @@
+.box-1{
+    background-color: rgb(243, 231, 217);
+    width: 100%;
+    text-align: center;
+}
+.para{
+    /* margin makes the gap outside that element  , we can gave margin seperate and also in shorthand*/
+    margin: 20px auto;
+    position: relative;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    background: rgb(126, 240, 126);
+    /* min width is used to tell the browser that after that minimum width , the box no more shrink */
+    min-width: 300px;
+    /* same goes to maximum width */
+    /* max-width: 800px; */   
+    height: 300px;
+     /* as we gave the height the content goes outside the box instead of lettting it go we just gave it the property of overflow hidden or auto (which makes scroll whenever the content goes outside) */
+     overflow: auto;
+}
+a{
+    /* we can easily change the inline element into inline-block as we can't apply direct height and width to inline elements we have to change */
+    display: inline-block;
+    background-color: rgb(194, 130, 254);
+    text-align: center;
+ padding: 50px  auto;
+ padding-top: 12px;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+}
