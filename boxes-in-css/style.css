@@ -1,26 +1,26 @@
-.box-1{
+/* .box-1{
     background-color: rgb(243, 231, 217);
     width: 100%;
     text-align: center;
 }
 .para{
-    /* margin makes the gap outside that element  , we can gave margin seperate and also in shorthand*/
+     margin makes the gap outside that element  , we can gave margin seperate and also in shorthand
     margin: 20px auto;
     position: relative;
     width: 80%;
     align-items: center;
     justify-content: center;
     background: rgb(126, 240, 126);
-    /* min width is used to tell the browser that after that minimum width , the box no more shrink */
+    /* min width is used to tell the browser that after that minimum width , the box no more shrink 
     min-width: 300px;
-    /* same goes to maximum width */
-    /* max-width: 800px; */   
+    /* same goes to maximum width 
+    /* max-width: 800px;    
     height: 300px;
-     /* as we gave the height the content goes outside the box instead of lettting it go we just gave it the property of overflow hidden or auto (which makes scroll whenever the content goes outside) */
+     /* as we gave the height the content goes outside the box instead of lettting it go we just gave it the property of overflow hidden or auto (which makes scroll whenever the content goes outside) 
      overflow: auto;
 }
 a{
-    /* we can easily change the inline element into inline-block as we can't apply direct height and width to inline elements we have to change */
+    /* we can easily change the inline element into inline-block as we can't apply direct height and width to inline elements we have to change 
     display: inline-block;
     background-color: rgb(194, 130, 254);
     text-align: center;
@@ -29,4 +29,53 @@ a{
     height: 40px;
     width: 150px;
     border-radius: 20px;
+}
+.container{
+    height: 400px;
+    width: 60%;
+    background: #faeeae;
+    justify-content: center;
+    align-items: center;
+    /* display: block; 
+    display: flex;
+}
+.box{
+height: 200px;
+width: 40%;
+/* border: 2px solid black; 
+justify-content: space-evenly;
+border: 1px solid black;
+} */
+
+
+/* style for div 1 */
+div.box {
+    height: 300px;
+    width: 300px;
+    background-color: #bbbbaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.para{
+    height: 75%;
+    width: 75%;
+    background-color: #0088dd;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+ /* to add box shadow  */
+   /* horizontal , vertical ,  ,  blur , spread ,  color */
+    box-shadow: 5px 5px 5px 5px #777777;
+
+    border-radius: 20px;
+
+}
+
+
+.para::-webkit-scrollbar {
+    display: none;
 }
